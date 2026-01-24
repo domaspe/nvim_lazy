@@ -3,4 +3,3 @@
 -- Add any additional options here
 
 vim.opt.title = true
-vim.opt.titlestring = "nvim: %{fnamemodify(getcwd(), ':t')}"
