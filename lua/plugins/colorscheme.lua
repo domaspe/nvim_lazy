@@ -1,24 +1,29 @@
 return {
   {
-    "f-person/auto-dark-mode.nvim",
+    "LazyVim/LazyVim",
     opts = {
-      update_interval = 1000,
-      set_dark_mode = function()
-        vim.o.background = "dark"
-      end,
-      set_light_mode = function()
-        vim.o.background = "light"
-      end,
+      colorscheme = "oxocarbon",
     },
   },
   {
     "nyoom-engineering/oxocarbon.nvim",
     lazy = false,
     priority = 1000,
-    config = function()
-      vim.cmd.colorscheme("oxocarbon")
-    end,
+  },
+  {
+    "f-person/auto-dark-mode.nvim",
+    opts = {
+      update_interval = 1000,
+      set_dark_mode = function()
+        vim.o.background = "dark"
+        vim.cmd.colorscheme("oxocarbon")
+      end,
+      set_light_mode = function()
+        vim.o.background = "light"
+        vim.cmd.colorscheme("kanagawa")
+      end,
+    },
   },
   { "rebelot/kanagawa.nvim" },
-  { "joshdick/onedark.vim" },
+  { "joshdick/onedark.vim", lazy = true },
 }
