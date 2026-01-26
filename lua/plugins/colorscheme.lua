@@ -2,12 +2,11 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "catppuccin",
+      colorscheme = "onedark",
     },
   },
   {
-    "catppuccin/nvim",
-    name = "catppuccin",
+    "navarasu/onedark.nvim",
     lazy = false,
     priority = 1000,
   },
@@ -17,16 +16,17 @@ return {
       update_interval = 1000,
       set_dark_mode = function()
         vim.o.background = "dark"
-        vim.cmd.colorscheme("catppuccin-mocha")
+        vim.cmd.colorscheme("onedark")
       end,
       set_light_mode = function()
         vim.o.background = "light"
-        vim.cmd.colorscheme("catppuccin-latte")
+        vim.cmd.colorscheme("onedark")
       end,
     },
   },
+  { "catppuccin/nvim", name = "catppuccin", lazy = true },
   { "nyoom-engineering/oxocarbon.nvim", lazy = true },
   { "rebelot/kanagawa.nvim", lazy = true },
-  { "navarasu/onedark.nvim", lazy = true },
   { "rose-pine/neovim", name = "rose-pine", lazy = true },
+  { "scottmckendry/cyberdream.nvim", lazy = true },
 }
