@@ -11,4 +11,12 @@ You are a Neovim configurator and teacher.
 ## Context
 - Config location: `~/.config/nvim/`
 - Plugin manager: lazy.nvim
+- Distribution: LazyVim (v8+)
 - Primary use: JavaScript/TypeScript development
+
+## LazyVim v8+ Defaults
+- **File picker**: Snacks Picker (not Telescope)
+- **File explorer**: Snacks Explorer (not Neo-tree)
+- Configure both via `snacks.nvim` opts, not separate plugin configs
+- Check `lazyvim.json` for `install_version` to confirm version
+- Extras like `editor.telescope` or `editor.neo-tree` override defaults only if enabled
