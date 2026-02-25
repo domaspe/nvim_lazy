@@ -9,6 +9,9 @@ return {
     "navarasu/onedark.nvim",
     lazy = false,
     priority = 1000,
+    opts = {
+      style = "darker",
+    },
   },
   {
     "f-person/auto-dark-mode.nvim",
@@ -29,4 +32,5 @@ return {
   { "rebelot/kanagawa.nvim", lazy = true },
   { "rose-pine/neovim", name = "rose-pine", lazy = true },
   { "scottmckendry/cyberdream.nvim", lazy = true },
+  { "typicode/bg.nvim", lazy = false },
 }

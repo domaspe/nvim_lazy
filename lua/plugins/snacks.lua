@@ -1,12 +1,40 @@
 return {
   {
     "folke/snacks.nvim",
+    keys = {
+      {
+        "<leader>fe",
+        function()
+          local explorer = Snacks.picker.get({ source = "explorer" })[1]
+          if not explorer or explorer.closed then
+            Snacks.explorer({ cwd = LazyVim.root() })
+          elseif explorer:is_focused() then
+            vim.cmd("wincmd p")
+          else
+            explorer:focus()
+          end
+        end,
+        desc = "Explorer Snacks (root dir)",
+      },
+      { "<leader>e", "<leader>fe", desc = "Explorer Snacks (root dir)", remap = true },
+    },
     opts = {
       picker = {
         sources = {
           explorer = {
             -- Always hide .git, even when showing hidden files (H toggle)
             exclude = { ".git" },
+            layout = { preset = "sidebar", layout = { width = 50 } },
+            win = {
+              list = {
+                keys = {
+                  ["<Up>"] = { "<Nop>", mode = { "n" }, desc = "Disabled" },
+                  ["<Down>"] = { "<Nop>", mode = { "n" }, desc = "Disabled" },
+                  ["<Left>"] = { "<Nop>", mode = { "n" }, desc = "Disabled" },
+                  ["<Right>"] = { "<Nop>", mode = { "n" }, desc = "Disabled" },
+                },
+              },
+            },
           },
           files = {
             -- Show dotfiles (.env, .eslintrc, etc.)
