@@ -16,8 +16,8 @@ vim.keymap.set({ "n", "x" }, "d", '"_d', { desc = "Delete (black hole)" })
 vim.keymap.set("x", "p", '"_dP', { desc = "Paste without overwriting register" })
 
 -- Leader variants: original register-affecting behavior
-vim.keymap.set({ "n", "x" }, "<leader>D", "d", { desc = "Delete (yank into register)" })
-vim.keymap.set("x", "<leader>p", "p", { desc = "Paste (replace register)" })
+-- vim.keymap.set({ "n", "x" }, "<leader>D", "d", { desc = "Delete (yank into register)" })
+-- vim.keymap.set("x", "<leader>p", "p", { desc = "Paste (replace register)" })
 
 -- Disable arrow keys (use hjkl)
 vim.keymap.set({ "n", "i", "v" }, "<Up>", "<Nop>")
