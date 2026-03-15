@@ -36,11 +36,45 @@ return {
               },
             },
           },
+          git_status = {
+            layout = {
+              preset = "default",
+              layout = {
+                width = 0.9,
+                [2] = { width = 0.6 },
+              },
+            },
+          },
           files = {
             -- Show dotfiles (.env, .eslintrc, etc.)
             hidden = true,
             -- Exclude .git directory
             exclude = { ".git" },
+            layout = {
+              preset = "default",
+              layout = {
+                width = 0.9,
+                [2] = { width = 0.6 },
+              },
+            },
+          },
+          buffers = {
+            layout = {
+              preset = "default",
+              layout = {
+                width = 0.9,
+                [2] = { width = 0.6 },
+              },
+            },
+          },
+          lines = {
+            layout = {
+              preset = "default",
+              layout = {
+                width = 0.9,
+                [2] = { width = 0.6 },
+              },
+            },
           },
           grep = {
             -- Case sensitivity toggle (Alt+S)
