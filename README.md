@@ -5,6 +5,8 @@ Refer to the [documentation](https://lazyvim.github.io/installation) to get star
 
 ## Lazygit
 
+Requires `XDG_CONFIG_HOME="$HOME/.config"` in your shell profile (macOS defaults to `~/Library/Application Support/lazygit/` otherwise).
+
 Add the following to `~/.config/lazygit/config.yml` to open files in the main neovim window when pressing `e` (instead of a new tab), and close the lazygit float afterwards:
 
 ```yaml
@@ -29,7 +31,6 @@ Press `Ctrl+a` in the files panel to generate an AI commit message using [aicomm
 customCommands:
   - key: "<c-a>"
     description: "Generate AI commit message"
-    command: "aicommit2 -c && pbpaste > .git/LAZYGIT_PENDING_COMMIT"
+    command: "aicommit2 -c -s -d && pbpaste > .git/LAZYGIT_PENDING_COMMIT"
     context: "files"
-    output: "terminal"
 ```
