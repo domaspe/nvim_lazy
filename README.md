@@ -8,9 +8,7 @@ Refer to the [documentation](https://lazyvim.github.io/installation) to get star
 Clear all cached data:
 
 ```bash
-rm -rf ~/.local/share/nvim
-rm -rf ~/.local/state/nvim
-rm -rf ~/.cache/nvim
+rm -rf ~/.local/share/nvim && rm -rf ~/.local/state/nvim && rm -rf ~/.cache/nvim
 ```
 
 Run `:checkhealth` to diagnose issues.

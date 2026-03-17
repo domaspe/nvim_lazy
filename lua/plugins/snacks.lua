@@ -19,6 +19,12 @@ return {
       { "<leader>e", "<leader>fe", desc = "Explorer Snacks (root dir)", remap = true },
     },
     opts = {
+      lazygit = {
+        win = {
+          width = 0.95,
+          height = 0.95,
+        },
+      },
       picker = {
         sources = {
           explorer = {
@@ -40,7 +46,8 @@ return {
             layout = {
               preset = "default",
               layout = {
-                width = 0.9,
+                width = 0.95,
+                height = 0.95,
                 [2] = { width = 0.6 },
               },
             },
@@ -53,7 +60,8 @@ return {
             layout = {
               preset = "default",
               layout = {
-                width = 0.9,
+                width = 0.95,
+                height = 0.95,
                 [2] = { width = 0.6 },
               },
             },
@@ -62,7 +70,8 @@ return {
             layout = {
               preset = "default",
               layout = {
-                width = 0.9,
+                width = 0.95,
+                height = 0.95,
                 [2] = { width = 0.6 },
               },
             },
@@ -71,7 +80,8 @@ return {
             layout = {
               preset = "default",
               layout = {
-                width = 0.9,
+                width = 0.95,
+                height = 0.95,
                 [2] = { width = 0.6 },
               },
             },
