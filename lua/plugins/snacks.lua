@@ -19,6 +19,11 @@ return {
       { "<leader>e", "<leader>fe", desc = "Explorer Snacks (root dir)", remap = true },
     },
     opts = {
+      indent = {
+        filter = function(buf)
+          return vim.bo[buf].filetype ~= "markdown"
+        end,
+      },
       lazygit = {
         win = {
           width = 0.95,
@@ -31,16 +36,6 @@ return {
             -- Always hide .git, even when showing hidden files (H toggle)
             exclude = { ".git" },
             layout = { preset = "sidebar", layout = { width = 50 } },
-            win = {
-              list = {
-                keys = {
-                  ["<Up>"] = { "<Nop>", mode = { "n" }, desc = "Disabled" },
-                  ["<Down>"] = { "<Nop>", mode = { "n" }, desc = "Disabled" },
-                  ["<Left>"] = { "<Nop>", mode = { "n" }, desc = "Disabled" },
-                  ["<Right>"] = { "<Nop>", mode = { "n" }, desc = "Disabled" },
-                },
-              },
-            },
           },
           git_status = {
             layout = {

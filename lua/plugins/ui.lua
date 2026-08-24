@@ -7,16 +7,6 @@ return {
     },
   },
 
-  -- Move command line to the bottom of the screen
-  {
-    "folke/noice.nvim",
-    opts = {
-      cmdline = {
-        view = "cmdline",
-      },
-    },
-  },
-
   -- Surround: gsa (add), gsd (delete), gsr (replace)
   {
     "nvim-mini/mini.surround",

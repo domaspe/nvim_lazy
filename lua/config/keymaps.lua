@@ -19,12 +19,6 @@ vim.keymap.set("x", "p", '"_dP', { desc = "Paste without overwriting register" }
 -- vim.keymap.set({ "n", "x" }, "<leader>D", "d", { desc = "Delete (yank into register)" })
 -- vim.keymap.set("x", "<leader>p", "p", { desc = "Paste (replace register)" })
 
--- Disable arrow keys (use hjkl)
-vim.keymap.set({ "n", "i", "v" }, "<Up>", "<Nop>")
-vim.keymap.set({ "n", "i", "v" }, "<Down>", "<Nop>")
--- vim.keymap.set({ "n", "i", "v" }, "<Left>", "<Nop>")
--- vim.keymap.set({ "n", "i", "v" }, "<Right>", "<Nop>")
-
 -- Copy file path to clipboard
 vim.keymap.set("n", "<leader>yp", function()
   vim.fn.setreg("+", vim.fn.expand("%:p"))
