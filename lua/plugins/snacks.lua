@@ -9,7 +9,7 @@ return {
           if not explorer or explorer.closed then
             Snacks.explorer({ cwd = LazyVim.root() })
           elseif explorer:is_focused() then
-            vim.cmd("wincmd p")
+            explorer:close()
           else
             explorer:focus()
           end

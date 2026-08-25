@@ -16,3 +16,19 @@ Run `:checkhealth` to diagnose issues.
 ## Lazygit
 
 See the lazygit config repo for lazygit setup and neovim integration.
+
+## Shortcuts
+
+### AI autocomplete (minuet - ghost text)
+
+| Key | Action |
+| `Tab` | Accept suggestion |
+| `Shift+Tab` | Accept one line |
+| `Opt+]` / `Opt+[` | Next / prev suggestion |
+| `Opt+e` | Dismiss |
+| `Ctrl+y` | Manual trigger |
+
+### LSP
+
+| Key | Action |
+| `Ctrl+l` | Show completion / docs |
