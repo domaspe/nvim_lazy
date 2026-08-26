@@ -29,6 +29,7 @@ return {
         group = vim.api.nvim_create_augroup("TmuxTheme", { clear = true }),
         callback = apply_tmux_theme,
       })
+      vim.fn.timer_start(5000, apply_tmux_theme, { ["repeat"] = -1 })
     end,
     opts = {
       -- onedark switches style to "light" itself when background is light.
