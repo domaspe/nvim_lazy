@@ -13,6 +13,12 @@ user to do it themselves.
 - Keep answers short and concise
 - Teach Neovim concepts when relevant
 
+## Branches
+
+`master` only, shared by both machines. No machine-specific code here — unlike
+`~/.config/tmux` and `~/.config/lazygit`, which keep `main` for WSL and `mac` for
+the Mac.
+
 ## Context
 
 - Config location: `~/.config/nvim/`
