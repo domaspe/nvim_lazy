@@ -1,6 +1,9 @@
-return {
+local minuet_enabled = (vim.env.DEEPSEEK_API_KEY or "") ~= ""
+
+local spec = {
   {
     "milanglacier/minuet-ai.nvim",
+    cond = minuet_enabled,
     opts = {
       provider = "openai_fim_compatible",
       provider_options = {
@@ -25,8 +28,10 @@ return {
       },
     },
   },
+}
 
-  {
+if minuet_enabled then
+  table.insert(spec, {
     "saghen/blink.cmp",
     optional = true,
     opts = {
@@ -53,5 +58,7 @@ return {
         },
       },
     },
-  },
-}
+  })
+end
+
+return spec

@@ -21,6 +21,8 @@ See the lazygit config repo for lazygit setup and neovim integration.
 
 ### AI autocomplete (minuet - ghost text)
 
+Needs `DEEPSEEK_API_KEY` in the environment. Without the key minuet stays off.
+
 | Key | Action |
 | `Tab` | Accept suggestion |
 | `Shift+Tab` | Accept one line |
