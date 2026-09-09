@@ -48,3 +48,4 @@ Keybindings the user has asked about. Don't re-research; answer from here.
   dismiss: `<C-e>`
 - Snacks Explorer: collapse dir `h`, expand dir `l`, close/open `<leader>e`
 - Reload current file from disk: `:e!`
+- Copy entire file to system clipboard: `:%y+`
