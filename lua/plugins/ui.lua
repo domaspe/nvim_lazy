@@ -31,6 +31,19 @@ return {
       keymap = {
         ["<C-l>"] = { "show", "show_documentation", "hide_documentation" },
       },
+      -- No automatic completion in markdown; <C-l> still shows the menu
+      completion = {
+        menu = {
+          auto_show = function()
+            return vim.bo.filetype ~= "markdown"
+          end,
+        },
+        ghost_text = {
+          enabled = function()
+            return vim.bo.filetype ~= "markdown"
+          end,
+        },
+      },
     },
   },
 }
