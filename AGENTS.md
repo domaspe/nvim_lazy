@@ -47,5 +47,10 @@ Keybindings the user has asked about. Don't re-research; answer from here.
 - Next blink.cmp suggestion: `<C-n>`; previous: `<C-p>`; accept: `<Tab>`;
   dismiss: `<C-e>`
 - Snacks Explorer: collapse dir `h`, expand dir `l`, close/open `<leader>e`
+- Snacks Explorer: toggle hidden files `<M-h>`; toggle gitignored files `<M-i>` or `I`
 - Reload current file from disk: `:e!`
 - Copy entire file to system clipboard: `:%y+`
+- Copy file path: `<leader>yp` (absolute), `<leader>yl` (path:line); plugin:
+  `<leader>fyp` relative, `<leader>fyP` absolute, `<leader>fyn` filename
+- Quit current window (closes the Snacks Explorer sidebar when focused): `:q`;
+  quit all windows/exit Neovim: `:qa`; force without saving: `:qa!`
