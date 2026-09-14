@@ -54,3 +54,6 @@ Keybindings the user has asked about. Don't re-research; answer from here.
   `<leader>fyp` relative, `<leader>fyP` absolute, `<leader>fyn` filename
 - Quit current window (closes the Snacks Explorer sidebar when focused): `:q`;
   quit all windows/exit Neovim: `:qa`; force without saving: `:qa!`
+- Move forward through the jump list in Normal mode (opposite of `<C-o>`): `<C-i>`
+- No global Neovim mappings; terminal fallback behaves like `<Esc>o` (open line
+  below) and `<Esc>i` (insert before cursor): `<M-o>`, `<M-i>`
