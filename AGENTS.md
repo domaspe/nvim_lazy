@@ -16,8 +16,7 @@ user to do it themselves.
 ## Branches
 
 `master` only, shared by both machines. No machine-specific code here — unlike
-`~/.config/tmux` and `~/.config/lazygit`, which keep `main` for WSL and `mac` for
-the Mac.
+`~/.config/tmux`, which keeps `main` for WSL and `mac` for the Mac.
 
 ## Context
 
@@ -61,6 +60,9 @@ Keybindings the user has asked about. Don't re-research; answer from here.
 - Quit current window (closes the Snacks Explorer sidebar when focused): `:q`;
   quit all windows/exit Neovim: `:qa`; force without saving: `:qa!`
 - Move forward through the jump list in Normal mode (opposite of `<C-o>`): `<C-i>`
+- Previous `/` search match: `N`; next match: `n`
+- Repeat the latest `f`/`F`/`t`/`T` character jump: `;`; repeat it in the
+  opposite direction: `,`
 - No global Neovim mappings; terminal fallback behaves like `<Esc>o` (open line
   below) and `<Esc>i` (insert before cursor): `<M-o>`, `<M-i>`
 - Scroll the view without moving to another line (vertical): one line `<C-e>`
@@ -72,3 +74,5 @@ Keybindings the user has asked about. Don't re-research; answer from here.
 - Dismiss messages and notifications: `<leader>un` (Snacks notifications),
   `<leader>snd` (all noice messages); clear the bottom line `:echo ""`;
   message history `<leader>snh`, last message `<leader>snl`
+- Open a new line below and start typing: `o`; above: `O`; type at the end of
+  the current line: `A`

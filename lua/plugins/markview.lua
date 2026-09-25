@@ -13,6 +13,11 @@ return {
         modes = { "n", "no", "c", "i" },
         hybrid_modes = { "n", "i" },
       },
+      markdown = {
+        list_items = {
+          shift_width = 2,
+        },
+      },
       html = { enable = false },
       latex = { enable = false },
       yaml = { enable = false },

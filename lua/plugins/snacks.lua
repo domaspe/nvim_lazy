@@ -7,12 +7,6 @@ return {
           return vim.bo[buf].filetype ~= "markdown"
         end,
       },
-      lazygit = {
-        win = {
-          width = 0.95,
-          height = 0.95,
-        },
-      },
       picker = {
         sources = {
           explorer = {

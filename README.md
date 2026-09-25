@@ -13,10 +13,6 @@ rm -rf ~/.local/share/nvim && rm -rf ~/.local/state/nvim && rm -rf ~/.cache/nvim
 
 Run `:checkhealth` to diagnose issues.
 
-## Lazygit
-
-See the lazygit config repo for lazygit setup and neovim integration.
-
 ## Shortcuts
 
 ### AI autocomplete (minuet - ghost text)

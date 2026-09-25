@@ -17,7 +17,8 @@ local spec = {
         },
       },
       virtualtext = {
-        auto_trigger_ft = { "*" },
+        -- Temporarily disabled to stop automatic AI ghost text; uncomment to restore it.
+        -- auto_trigger_ft = { "*" },
         keymap = {
           accept = "<Tab>",
           accept_line = "<S-Tab>",

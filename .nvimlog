@@ -17,3 +17,6 @@ WRN 2026-09-14T09:58:21.797 ?.43193    server_start:199: Failed to start server:
 WRN 2026-09-14T09:58:27.351 ?.43402    server_start:199: Failed to start server: operation not permitted: /var/folders/0w/pmrc99qn3ddg094pty0208wr0000gn/T/nvim.domas/bYzA2Z/nvim.43402.0
 WRN 2026-09-14T09:58:37.863 ?.43739    server_start:199: Failed to start server: operation not permitted: /var/folders/0w/pmrc99qn3ddg094pty0208wr0000gn/T/nvim.domas/ZJG3xr/nvim.43739.0
 WRN 2026-09-14T09:58:55.167 ?.44410    server_start:199: Failed to start server: operation not permitted: /var/folders/0w/pmrc99qn3ddg094pty0208wr0000gn/T/nvim.domas/p2qs4a/nvim.44410.0
+WRN 2026-09-15T00:22:06.114 ?.79078    server_start:199: Failed to start server: operation not permitted: /var/folders/0w/pmrc99qn3ddg094pty0208wr0000gn/T/nvim.domas/Pq6sLu/nvim.79078.0
+WRN 2026-09-15T00:22:11.389 ?.79262    server_start:199: Failed to start server: operation not permitted: /var/folders/0w/pmrc99qn3ddg094pty0208wr0000gn/T/nvim.domas/m2pSrB/nvim.79262.0
+WRN 2026-09-15T08:22:40.522 ?.24321    server_start:199: Failed to start server: operation not permitted: /var/folders/0w/pmrc99qn3ddg094pty0208wr0000gn/T/nvim.domas/6y0uRw/nvim.24321.0
