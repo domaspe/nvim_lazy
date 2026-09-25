@@ -4,4 +4,3 @@
 
 vim.opt.title = true
 vim.opt.list = false
-vim.opt.wrap = true

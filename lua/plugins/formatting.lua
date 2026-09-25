@@ -20,7 +20,7 @@ local function markdown_prettier_args(ctx)
   }
 
   if not find_ancestor_file(ctx.filename, ".prettierrc") then
-    vim.list_extend(args, { "--print-width", "80", "--prose-wrap", "always" })
+    vim.list_extend(args, { "--print-width", "100", "--prose-wrap", "always" })
   end
 
   return args

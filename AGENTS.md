@@ -45,9 +45,15 @@ Keybindings the user has asked about. Don't re-research; answer from here.
 - Next minuet AI ghost text suggestion: `<M-]>`; previous: `<M-[>`; accept:
   `<Tab>`; dismiss: `<M-e>`
 - Next blink.cmp suggestion: `<C-n>`; previous: `<C-p>`; accept: `<Tab>`;
-  dismiss: `<C-e>`
-- Snacks Explorer: collapse dir `h`, expand dir `l`, close/open `<leader>e`
+  dismiss: `<C-e>`; show the menu by hand: `<C-space>`
+- Snacks Explorer: toggle sidebar from anywhere `<leader>e` (opens and focuses it
+  when closed, closes it when open); picking a file closes the sidebar; collapse
+  dir `h`, expand dir `l`; go up one directory (tree starts at the parent)
+  `<BS>` (file list only; from the search box press `<Esc>` then `/` first);
+  make the directory under the cursor the tree top `.`
 - Snacks Explorer: toggle hidden files `<M-h>`; toggle gitignored files `<M-i>` or `I`
+- Snacks Explorer search (`/`): next found file `<C-n>`, `<C-j>` or `<Down>`;
+  previous `<C-p>`, `<C-k>` or `<Up>`; open it `<CR>`; after `<Esc>` also `j`/`k`
 - Reload current file from disk: `:e!`
 - Copy entire file to system clipboard: `:%y+`
 - Copy file path: `<leader>yp` (absolute), `<leader>yl` (path:line); plugin:
@@ -57,3 +63,12 @@ Keybindings the user has asked about. Don't re-research; answer from here.
 - Move forward through the jump list in Normal mode (opposite of `<C-o>`): `<C-i>`
 - No global Neovim mappings; terminal fallback behaves like `<Esc>o` (open line
   below) and `<Esc>i` (insert before cursor): `<M-o>`, `<M-i>`
+- Scroll the view without moving to another line (vertical): one line `<C-e>`
+  down, `<C-y>` up; half screen `<C-d>` down, `<C-u>` up; full screen `<C-f>`
+  down, `<C-b>` up. All Vim defaults, nothing remaps them here
+- Scroll the view sideways (needs `nowrap`, the current setting): one column
+  `zl` right, `zh` left; half screen `zL` right, `zH` left; jump so the cursor
+  sits at the left edge `zs`, at the right edge `ze`
+- Dismiss messages and notifications: `<leader>un` (Snacks notifications),
+  `<leader>snd` (all noice messages); clear the bottom line `:echo ""`;
+  message history `<leader>snh`, last message `<leader>snl`
